@@ -45,3 +45,24 @@ The conn = engine.connect() command establishes a connection (conn) to a databas
 conn = engine.connect()
 ```
 Now we are all set to do the youtube channel analysis  
+you can downlaod the dataset from here https://github.com/rehalarjun/DATA1202/blob/main/youtube_dataset.csv
+
+## Running the analysis
+- to run the analyisi first downlaod the assignemt4.ipynb file in your local machine and then start the jupiter notebook.  ![image](https://github.com/rehalarjun/DATA1202/assets/113398985/f8733b6c-fa09-4886-837f-a38bb6c5361c)
+
+- now go the the file section of the jupiter notebook and locate the assignemt4.ipynb and then click on it
+![image](https://github.com/rehalarjun/DATA1202/assets/113398985/82b8c945-0c50-4e73-b1fc-fa3aba195c29)
+
+- when you click on it you will have this kind of interface
+![image](https://github.com/rehalarjun/DATA1202/assets/113398985/068eabf0-547b-45cd-a246-2aabdc9decdd)
+
+- now srat running the command by just selecting the cell and hitting on the run button on the above rebin.
+- make sure to change the path of the file  to where you have downlaoded the dataeset
+  ![image](https://github.com/rehalarjun/DATA1202/assets/113398985/40f12a53-9739-40b4-bc5b-983a003ac1fa)
+
+- lastly change the credential according to what the user have set on ones mysql workbench to connect to it
+  ![image](https://github.com/rehalarjun/DATA1202/assets/113398985/e5e1ba97-57b2-4398-8b6b-d487e265512f)
+
+
+
+
