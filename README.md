@@ -63,6 +63,60 @@ you can downlaod the dataset from here https://github.com/rehalarjun/DATA1202/bl
 - lastly change the credential according to what the user have set on ones mysql workbench to connect to it
   ![image](https://github.com/rehalarjun/DATA1202/assets/113398985/e5e1ba97-57b2-4398-8b6b-d487e265512f)
 
+  ### Breakdown of Tests
+
+1. **Calculate Channel Distribution:**
+   - Description: Calculates the distribution of channel types from the loaded dataset.
+   - Command: 
+     ```python
+     channel_distribution_result = calculate_channel_distribution(data)
+     print(channel_distribution_result)
+     ```
+
+2. **Load Top 1000 Data:**
+   - Description: Loads the top 1000 records from the sorted dataset into a CSV file.
+   - Command: 
+     ```python
+     top_1000_data = load_data_top_1000(data)
+     ```
+
+3. **Read and Verify Loaded Data:**
+   - Description: Reads the CSV file containing the top 1000 records and displays the loaded DataFrame.
+   - Command: 
+     ```python
+     data2 = pd.read_csv('top_1000_channels.csv')
+     data2.head()
+     ```
+
+4. **Database Connection and Query:**
+   - Description: Creates a connection to a MySQL database using SQLAlchemy and reads a simple query into a DataFrame.
+   - Command: 
+     ```python
+     df = pd.read_sql("SELECT * FROM assignment4.youtube_dataset", conn)
+     print(df.head())
+     ```
+
+5. **Write Data to MySQL Table:**
+   - Description: Writes the loaded DataFrame to a MySQL table.
+   - Command: 
+     ```python
+     data2.to_sql(table_name, con=engine, if_exists='replace', index=False)
+     ```
+
+Note: Ensure that the MySQL server is running and the database and table names match your actual setup.
+
+Feel free to modify the descriptions and commands as needed for your specific project.
+
+
+##  Deployment 
+To deploy this script, make sure you have a MySQL database set up and modify the connection details in the script. Then, run the script to load the data into the database.
+
+## Author
+Arjun Rehal
+
+## Lisence
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
 
 
 
